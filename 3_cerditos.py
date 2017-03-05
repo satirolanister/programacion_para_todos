@@ -1,30 +1,41 @@
-# importo libreria matematicas
-#prueba jonathan
-import math
+# \n es un salto de linea
+# declaro posibles opciones que puede escojer el usuario
+opciones = 'Por favor escoja el material de la casa del cerdito: \n'
+opciones = opciones + '1 -> PAJA \n'
+opciones = opciones + '2 -> MADERA \n'
+opciones = opciones + '3 -> LADRILLO \n'
+opciones = opciones + '-> : '
 
-# declaro velocidad viento segun lo que me indique el usuario
-velocidad_viento = int(input("Ingrese velocidad viento: "))
+# pido las opciones de la casa segun la variavle que cree anteriormente
+casa = int(input(opciones))
 
-# definir condicionales dependiendo el viento
-if velocidad_viento < 3.2:
-    print("Es paja")
-elif velocidad_viento < 33.4:
-    print("Es madera")
+if casa == 1:
+    print ("Correcto")
+    # declaro velocidad viento segun lo que me indique el usuario
+    velocidad_viento = int(input("Ingrese velocidad viento: "))
+
+    # definir condicionales dependiendo el viento
+    if velocidad_viento > 3.2:
+        print("EL LOBO TUMBARA LA CASA DEL CERDITO")
+    else:
+        print("LA CASA DEL CERDITO NO CAERA")
+elif casa == 2:
+    print ("Correcto")
+    # declaro velocidad viento segun lo que me indique el usuario
+    velocidad_viento = int(input("Ingrese velocidad viento: "))
+    # definir condicionales dependiendo el viento
+    if velocidad_viento > 33.4:
+        print("EL LOBO TUMBARA LA CASA DEL CERDITO")
+    else:
+        print("LA CASA DEL CERDITO NO CAERA")
+elif casa == 3:
+    print ("Correcto")
+    # declaro velocidad viento segun lo que me indique el usuario
+    velocidad_viento = int(input("Ingrese velocidad viento: "))
+    # definir condicionales dependiendo el viento
+    if velocidad_viento > 150:
+        print("EL LOBO TUMBARA LA CASA DEL CERDITO")
+    else:
+        print("LA CASA DEL CERDITO NO CAERA")
 else:
-    print("Es ladrillo")
- #termina proyecto
-
-#---------------------------------------------------------------------------------------------------
->>> import math
-material_paja = float(3.2)
-material_madera = float(33.4)
-material_ladrillo = float(150)
-Vel_Viento = int(input("Ingrese la velocidad con la que el lobo sopla: "))
->>> if Vel_Viento < 3.2:
-    print("El lobo puede tumbar la casa hecha de paja")
-elif Vel_Viento < 33.4:
-    print("El lobo puede tumbar la casa hecha de paja y madera")
-elif velocidad_viento <= 150:
-    print("El lobo puede tumbar la casa hecha de paja, madera y ladrillo")
-else:
-    print("El lobo no puede tirar la casa")
+    print ("esta opcion no es valida por favor vuelva a intentar ")
